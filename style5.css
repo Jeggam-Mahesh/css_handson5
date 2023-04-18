@@ -1,0 +1,158 @@
+
+body{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.container{
+
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    row-gap: 50px;
+  
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.row{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    column-gap: 50px; 
+}
+.num{
+    margin-top: 84px;
+}
+.box1{
+    animation: anim1 2s  infinite alternate ;
+    background-color: cornflowerblue;
+}
+.box2{
+    animation: anim2 2s infinite alternate ;
+    background-color:plum;
+}
+.box3{
+    animation: anim3 2s  infinite normal ;
+    background-color: cornflowerblue;
+}
+
+.box4{
+    animation: anim4 2s  infinite alternate;
+    background-color: cornflowerblue;
+}
+.box5{
+    animation: anim5 2s  infinite alternate ;
+    background-color: brown;
+}
+.box6{
+    animation: anim6 2s  infinite alternate;
+    background-color: chartreuse;
+}
+@keyframes anim1{
+    0%{
+        transform: skewX(-30deg);
+    }
+    100%{
+        transform: skewX(30deg);
+    }
+}
+@keyframes anim2{
+    0%{
+        transform: skewy(30deg);
+    }
+    100%{
+        transform: skewy(-30deg);
+    }
+}
+@keyframes anim3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim4{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,0.5);
+    }
+}
+@keyframes anim5{
+    0%{
+        transform:  scale(1,1);
+    }
+    100%{
+        transform: scale(0.5,1);
+    }
+}
+@keyframes anim6{
+    0%{
+        transform:  rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+a{
+    text-align: center;
+    font: 50px bolder;
+}
+/* ***************index2*************** */
+.container2{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+li{
+margin-bottom: 30px;
+}
+.box7{
+   transition: all 3s;
+}
+.box7:hover{
+  width: 300px;  
+}
+.box8{
+    transition: all 3s;
+ }
+ .box8:hover{
+    height: 300px;
+    width: 300px; 
+ }
+ .box9{
+    transition:3s linear;
+ }
+ .box9:hover{
+     width: 300px;
+ }
+ .box10{
+    transition:3s ease;
+ }
+ .box10:hover{
+     width: 300px;
+ }
+ .box11{
+    transition:3s ease-in;
+ }
+ .box11:hover{
+     width: 300px;
+ }
+ .box12{
+    transition:3s  ease-out;
+ }
+ .box12:hover{
+    width: 300px; 
+ }
+.box13{
+    transition:3s ease-in-out;
+ }
+ .box13:hover{
+     width: 300px;
+ }
